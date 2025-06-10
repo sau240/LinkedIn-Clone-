@@ -1,0 +1,324 @@
+.navbar {
+  height: 56px; /* 16 * 3.5 */
+  padding: 0 24px;
+  background-color: white;
+  border-bottom: 1px solid #d3d3d3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 35px; /* exactly 16px height */
+  object-fit: contain;
+}
+
+.nav-icons-container {
+  display: flex;
+  gap: 3px; /* space between nav items */
+  align-items: center;
+  color: #666666;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.nav-icon:hover {
+  color: black;
+}
+
+.nav-icon svg {
+  font-size: 25px; /* icons ~20px */
+}
+
+.nav-icon span {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1;
+}
+/* Reuse nav-icon styles for Messaging */
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  color: #666;
+  font-weight: 500;
+  font-size: 12px;
+  margin-right: 24px; /* spacing between items */
+}
+
+.nav-icon:hover {
+  color: black;
+}
+
+.nav-icon svg {
+  font-size: 20px;
+}
+
+/* Divider vertical line */
+.divider {
+  height: 32px; /* about 3/4 of navbar height 56px */
+  border-left: 1px solid #c4c4c4; /* light gray */
+  margin: 0 16px; /* horizontal spacing */
+  align-self: center;
+}
+
+/* Join now button styling */
+.join-now-btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 24px;
+  transition: background-color 0.2s ease;
+}
+
+.join-now-btn:hover {
+  background-color: #e6e6e6;
+}
+
+/* Sign in button styling */
+.sign-in-btn {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0a66c2; /* LinkedIn blue */
+  border: 1px solid #0a66c2;
+  padding: 8px 16px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sign-in-btn:hover {
+  background-color: #0a66c2;
+  color: white;
+}
+
+/* Reset some basics */
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f2ef; /* LinkedIn subtle gray background */
+}
+
+h1 {
+  color: #0a66c2; /* LinkedIn blue */
+}
+
+/* Container for the whole login page */
+.flex {
+  height: 90vh;
+  max-height: 90vh;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Left side styles */
+.w-1\/2 {
+  width: 50%;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem; /* 36px */
+  line-height: 2.5rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.text-gray-600 {
+  color: #595959;
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cfcfcf;
+  border-radius: 0.375rem; /* 6px rounded corners */
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.focus\:outline-none:focus {
+  outline: none;
+}
+
+.focus\:ring-2:focus {
+  box-shadow: 0 0 0 2px #0a66c2; /* LinkedIn blue ring */
+}
+
+.bg-blue-600 {
+  background-color: #0a66c2;
+}
+
+.text-white {
+  color: white;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.hover\:bg-blue-700:hover {
+  background-color: #004182;
+}
+
+.transition {
+  transition: background-color 0.3s ease;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.text-blue-600 {
+  color: #0a66c2;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
+}
+
+.max-w-max {
+  max-width: max-content;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.border-t {
+  border-top: 1px solid #d6d6d6;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-gray-700 {
+  color: #444;
+}
+
+/* Right side styles */
+.bg-blue-50 {
+  background-color: #e6f0fa; /* light LinkedIn blue background */
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-h-\[90vh\] {
+  max-height: 90vh;
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(10,102,194,0.3),
+              0 4px 6px -2px rgba(10,102,194,0.15);
+}
+
+/* Form spacing */
+.flex-col {
+  flex-direction: column;
+}
+
+.space-y-5 > * + * {
+  margin-top: 1.25rem;
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 768px) {
+  .flex {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .w-1\/2 {
+    width: 100%;
+  }
+
+  .px-16 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .max-h-\[90vh\] {
+    max-height: none;
+  }
+}
